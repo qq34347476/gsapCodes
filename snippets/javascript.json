@@ -1,3 +1,180 @@
 {
-  
+  "相关属性": {
+    "prefix": ["gsap-config-help"],
+    "body": [
+    "TweenMax.to(target,duration,{vars})",
+    "vars中的属性:",
+    "delay：1,延迟1s在开始动画",
+    "ease：Back.waseOut，动画变化速率,back可以从https://greensock.com/get-started-js#easing获取替换",
+    "clearProps: \"all\" 清空所有style属性 清理个别样式直接写出: clearProps: \"opacity\"",
+    "autoAlpha: 0  opacity和visibility这2个css属性的结合",
+    "onComplete：回调函数",
+    "样式属性可以是函数 x: function(){return Math.random()*300;}",
+    "针对多个dom样式属性可以是函数带参 x: function(index,target){return (index + 1) * 50; }  // 100, 200, 300",
+    "                                     当前元素的索引 当前dom元素"
+    ],
+    "description": [
+    "相关属性"
+    ]
+  },
+  "快捷引入GSAP": {
+    "prefix": ["gsap-config-url"],
+    "body": [
+    "下载地址：https://gitee.com/qq34347476/gsap/raw/master/js/TweenMax.js",
+    "获取ease属性:https://greensock.com/get-started-js#easing"
+    ],
+    "description": [
+    "快捷引入GSAP"
+    ]
+  },
+  "指定默认动画效果(缓动)": {
+    "prefix": ["gsap-config"],
+    "body": [
+    "${1|TweenMax,TweenLite|}.defaultEase = ${2|power0,Power1,Power2,Power3,Power4,Back,Elastic,Bounce,Rough,SlowMo,Stepped,Circ,Expo,Sine,Custom|}.${3|easeInOut,easeIn,easeOut|};"
+    ],
+    "description": [
+    "指定默认动画效果(缓动)"
+    ]
+  },
+
+  "快速创建TweenMax": {
+    "prefix": ["gsap-new-tween"],
+    "body": [
+    "const tween = new TweenMax()"
+    ],
+    "description": [
+    "快速创建TweenMax"
+    ]
+  },
+
+  "TweenMax.to(target, duration, vars)": {
+    "prefix": ["gsap-to"],
+    "body": [
+    "${1|tween,TweenMax|}.to(${2:需要添加动画的DOM元素}, ${3:动画持续的时间(秒)}, {${4:最终样式})"
+    ],
+    "description": [
+    "从 原本样式 变化到{vars}中定义的样式"
+    ]
+  },
+  "TweenMax.from(target,duration,{vars})": {
+    "prefix": ["gsap-from"],
+    "body": [
+    "${1|tween,TweenMax|}.from(${2:需要添加动画的DOM元素}, ${3:动画持续的时间(秒)}, {${4:开始样式})"
+    ],
+    "description": [
+    "从{vars}定义的样式 变化到 原本的样式"
+    ]
+  },
+  "TweenMax.fromTo(target,duration,{vars})": {
+    "prefix": ["gsap-fromTo"],
+    "body": [
+    "${1|tween,TweenMax|}.fromTo(${2:需要添加动画的DOM元素}, ${3:动画持续的时间(秒)}, {${4:初始样式vars1}, {${5:最终样式vars2})"
+    ],
+    "description": [
+    "从{vars1}变化到{vars2}"
+    ]
+  },
+
+  "TweenMax.staggerTo(target,duration,{vars},stagger)": {
+    "prefix": ["gsap-stagger-to"],
+    "body": [
+    "${1|tween,TweenMax|}.staggerTo(${2:需要添加动画的DOM元素(可以数组)}, ${3:动画持续的时间(秒)}, {${4:最终样式}, ${5:设置两个元素变化间隔时间})"
+    ],
+    "description": [
+    "从 原本样式 变化到{vars}中定义的样式 (多个元素参差变化)"
+    ]
+  },
+  "TweenMax.staggerFrom(target,duration,{vars})": {
+    "prefix": ["gsap-stagger-from"],
+    "body": [
+    "${1|tween,TweenMax|}.staggerFrom(${2:需要添加动画的DOM元素(可以数组)}, ${3:动画持续的时间(秒)}, {${4:开始样式}, ${5:设置两个元素变化间隔时间})"
+    ],
+    "description": [
+    "从{vars}定义的样式 变化到 原本的样式"
+    ]
+  },
+  "TweenMax.fromTo(target,duration,{vars},stagger)": {
+    "prefix": ["gsap-stagger-fromTo"],
+    "body": [
+    "${1|tween,TweenMax|}.fromTo(${2:需要添加动画的DOM元素(可以数组)}, ${3:动画持续的时间(秒)}, {${4:初始样式vars1}, {${5:最终样式vars2}, ${6:设置两个元素变化间隔时间})"
+    ],
+    "description": [
+    "从{vars1}变化到{vars2}"
+    ]
+  },
+
+  "暂停": {
+    "prefix": ["gsap-api-pause"],
+    "body": [
+    "${1:tween}.pause() //暂停"
+    ],
+    "description": [
+    "暂停"
+    ]
+  },
+  "继续播放": {
+    "prefix": ["gsap-api-resume"],
+    "body": [
+    "${1:tween}.resume() //继续播放"
+    ],
+    "description": [
+    "继续播放"
+    ]
+  },
+  "反转播放": {
+    "prefix": ["gsap-api-reverse"],
+    "body": [
+    "${1:tween}.reverse() //反转播放"
+    ],
+    "description": [
+    "反转播放"
+    ]
+  },
+  "跳转播放": {
+    "prefix": ["gsap-api-seek"],
+    "body": [
+    "${1:tween}.seek(${2:num}) //跳转到(${2:num}s进度处开始播放"
+    ],
+    "description": [
+    "跳转播放"
+    ]
+  },
+  "重播": {
+    "prefix": ["gsap-api-restart"],
+    "body": [
+    "${1:tween}.restart() //重播"
+    ],
+    "description": [
+    "重播"
+    ]
+  },
+  "倍速播放": {
+    "prefix": ["gsap-api-timeScale"],
+    "body": [
+    "${1:tween}.timeScale(${2:num}) //动画变为${2:num}倍速"
+    ],
+    "description": [
+    "倍速播放"
+    ]
+  },
+
+  "快速创建timeline时间轴": {
+    "prefix": ["gasp-new-timeline"],
+    "body": [
+    "var timeline = new TimelineLite()"
+    ],
+    "description": [
+    "快速创建timeline时间轴"
+    ]
+  },
+  "向时间轴添加动画": {
+    "prefix": ["gasp-timeline-add"],
+    "body": [
+    "${1:timeline}.add(${2:TweenLite}.from('${3:需要添加动画的DOM元素}', ${4:持续时间}, {y: '-=60',autoAlpha: 0}, '{|动画在时间轴的位置(默认0),-=0.7|}'))"
+    ],
+    "description": [
+    "向时间轴添加动画"
+    ]
+  }
+
 }
