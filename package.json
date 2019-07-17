@@ -1,0 +1,64 @@
+{
+    "name": "snippets-for-gsap",
+    "displayName": "A-snippets-for-gsap",
+    "description": "(GSAP动效引擎)",
+    "keywords": [
+        "vscode",
+        "gsap",
+        "动效引擎",
+        "snippets",
+        "efficient",
+        "xuedao",
+        "懒人",
+        "easy",
+        "js",
+        "javascript",
+        "css",
+        "jquery"
+    ],
+    "version": "1.0.1",
+    "publisher": "xuedao",
+    "engines": {
+        "vscode": "^1.27.0"
+    },
+    "categories": [
+        "Other",
+        "Snippets",
+        "Programming Languages"
+    ],
+    "icon": "images/icon.png",
+    "activationEvents": [
+        "*"
+    ],
+    "main": "./src/extension",
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript.json"
+            }
+        ],
+        "iconThemes": []
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "eslint": "^4.11.0",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    },
+    "license": "SEE LICENSE IN LICENSE.txt",
+    "bugs": {
+        "url": "https://github.com/qq34347476/web/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/qq34347476/web"
+    },
+    "homepage": "https://github.com/qq34347476/web/README.md"
+}
