@@ -39,7 +39,7 @@ TweenMax是GSAP集合包，除前面3个之外，还包括plugins里的常用插
 
 | 内容                                             |                                快捷键 |
 | :----------------------------------------------- | ------------------------------------: |
-| config                                           |                          vars相关属性 |
+| config-help                                      |                          vars相关属性 |
 | config-url                                       |                          快捷引入GSAP |
 | new-tween                                        |                      快速创建TweenMax |
 | to                                               |                           TweenMax.to |

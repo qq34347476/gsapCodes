@@ -1,0 +1,11 @@
+{
+    "gsap-cdn": {
+        "prefix": ["cdn-gsap"],
+        "body": [
+        "https://gitee.com/qq34347476/gsap/raw/master/js/TweenMax.js"
+        ],
+        "description": [
+        "gsap-cdn"
+        ]
+    }
+}
