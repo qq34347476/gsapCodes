@@ -1,4 +1,12 @@
-# README
+<!--
+ * @Descripttion: 
+ * @Author: zhujiang
+ * @Date: 2019-07-18 03:10:19
+ * @LastEditors: zhujiang
+ * @LastEditTime: 2020-01-09 15:01:26
+ * @FilePath: \gsap代码片段\README.md
+ -->
+# README [![](https://badgen.net/vs-marketplace/v/xuedao.snippets-for-gsap)](https://marketplace.visualstudio.com/items?itemName=xuedao.snippets-for-gsap) [![](https://badgen.net/vs-marketplace/i/xuedao.snippets-for-gsap)](https://marketplace.visualstudio.com/items?itemName=xuedao.snippets-for-gsap) [![](https://badgen.net/vs-marketplace/d/xuedao.snippets-for-gsap)](https://marketplace.visualstudio.com/items?itemName=xuedao.snippets-for-gsap) ![](https://img.shields.io/badge/license-MIT-F44336.svg)
 
 欢迎来到懒人世界
 
